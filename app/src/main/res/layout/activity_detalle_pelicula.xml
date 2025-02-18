@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/black"
     tools:context=".DetallePelicula">
 
     <LinearLayout
@@ -16,7 +17,7 @@
         <ImageView
             android:id="@+id/iv_pelicula_imagen"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="250dp"
             android:layout_gravity="center"
             android:src="@drawable/bones"/>
 
@@ -24,17 +25,44 @@
             android:id="@+id/tv_nombre_pelicula"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="BONES"
-            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:text="Titulo de la pelicula"
+            android:textSize="25sp"
+            android:textColor="@color/old_yellow"
             android:gravity="center"/>
 
         <TextView
             android:id="@+id/tv_pelicula_desc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Yi"
-            android:textSize="20sp"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="30dp"
+            android:text="Descripcion de la pelicula"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/buyTickets"
+        android:layout_width="237dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:text="BUY MY TICKETS"
+        />
+
+    <TextView
+        android:id="@+id/seatLeft"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:text="0 seats available"
+        android:gravity="center"
+        android:textColor="@color/yellow"
+        android:textSize="14sp" />
 
 </LinearLayout>
